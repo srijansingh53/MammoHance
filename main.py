@@ -25,6 +25,9 @@ plt.show()
 
 # Implementing second step
 G1, G2, e = Step(image).Second(S)
+G = G1+G2
+cv2.imwrite('outputs/gradient.jpg', G)
+
 cv2.imwrite('outputs/hor_gradient.jpg', G1)
 plt.imshow(G1,cmap='gray')
 cv2.imwrite('outputs/ver_gradient.jpg', G2)
