@@ -83,6 +83,10 @@ The results were compared with existing engancement techniques like histogram eq
 
 ![comparison](/outputs/comparison.jpg)
 
+A zoomed section of an abnormal mammogram, magnified by bilinear interpolation
+
+![zoomed](/outputs/zoomed_result.png)
+
 ## Contribution
 - Mentor - Dr. Pritee Khanna
 - Team - [Srijan Singh](https://github.com/srijansingh53) and [Rishikesh Ghule](https://github.com/rushi04)
