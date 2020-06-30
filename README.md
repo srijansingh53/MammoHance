@@ -1,6 +1,6 @@
 # Adaptive Mammographic Image Enhancement  
 
-Pythonic Implementation of the [paper](https://ieeexplore.ieee.org/abstract/document/640739):
+Pythonic Implementation of the [paper](https://github.com/srijansingh53/IP_project/tree/master/assets/Adaptive-Mammographic-Image-Enhancement.pdf):
 
 Jong Kook Kim, Jeong Mi Park, Koun Sik Song, Hyun Wook Park. ["Adaptive Mammographic Image Enhancement
 Using First Derivative and Local Statistics"](https://ieeexplore.ieee.org/abstract/document/640739). IEEE Trans Med Imaging
@@ -8,16 +8,16 @@ Using First Derivative and Local Statistics"](https://ieeexplore.ieee.org/abstra
 
 ## Content
 
-- [Prerequisites](https://github.com/srijansingh53/IP_project#prerequisites)
+- [Installation](https://github.com/srijansingh53/IP_project#installation)
 - [Dataset](https://github.com/srijansingh53/IP_project#dataset)
 - [Scripts](https://github.com/srijansingh53/IP_project#scripts)
-    - [main.ipynb](https://github.com/srijansingh53/IP_project#mainipynb)
-    - [steps.py](https://github.com/srijansingh53/IP_project#stepspy)
-    - [main.py](https://github.com/srijansingh53/IP_project#mainpy)
-    - [compare.py](https://github.com/srijansingh53/IP_project#comparepy)
+    - [main.ipynb](https://github.com/srijansingh53/IP_project#main.ipynb)
+    - [steps.py](https://github.com/srijansingh53/IP_project#steps.py)
+    - [main.py](https://github.com/srijansingh53/IP_project#main.py)
+    - [compare.py](https://github.com/srijansingh53/IP_project#compare.py)
 - [Algorithm](https://github.com/srijansingh53/IP_project#algorithm)
-    - [Flow Chart](https://github.com/srijansingh53/IP_project#flowchart)
-    - [Pseudo Code](https://github.com/srijansingh53/IP_project#pseudocode)
+    - [Flow Chart](https://github.com/srijansingh53/IP_project#flow-chart)
+    - [Pseudo Code](https://github.com/srijansingh53/IP_project#pseudo-code)
 - [Results](https://github.com/srijansingh53/IP_project#results)
     - [1st Step](https://github.com/srijansingh53/IP_project#first-step)
     - [2nd Step](https://github.com/srijansingh53/IP_project#second-step)
@@ -50,10 +50,14 @@ The module contains different python programs that are interdependent for use in
 - ### [compare.py](https://github.com/srijansingh53/IP_project/tree/master/compare.py) : It compares the proposed algorithm with some prevalent IP enhancement techniques like Histogram Equalization and CLAHE
 
 ## Algorithm
+
 - Flow Chart
-    ![Flow Chart](/assets/flowchart.png)
+
+![Flow Chart](/assets/flowchart.png)
+    
 - Pseudo Code
-    ![Pseudo code](/assets/pseudocode.png)
+
+![Pseudo code](/assets/pseudocode.png)
 
 ## Results
 The goal of the project is to enhance the breast mammographic images so as to ease the detection of micro-calcifications or granular masses that may be malignant.
@@ -61,20 +65,21 @@ The goal of the project is to enhance the breast mammographic images so as to ea
 ### First Step
 The film-artifacts were removed using a 5x5 averaging kernel and then taking the difference between the original and mean image thresholded over a value. 
 
-![filtered](/outputs/filtered.jpg)
+<img src="/outputs/filtered.jpg"  width="150" height="300">
+
 
 ### Second Step
 The gradient images using both horizontal and vertical sobel operators were calculated.
 
-![gradient](/outputs/gradient.jpg)
+<img src="/outputs/gradient.jpg"  width="150" height="300">
 
 ### Third Step
 The adaptive signal gain is calculated for each gradient images and the multiplied to it and then added to the filtered image.
 
-![enhanced](/outputs/enhanced.jpg)
+<img src="/outputs/enhanced.jpg"  width="150" height="300">
 
 ### Compared Results
-The results were compared with existing engancement techniques like histogram equalization and CLAHE
+The results were compared with existing engancement techniques like histogram equalization and CLAHE.
 
 ![comparison](/outputs/comparison.jpg)
 
